@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLOCAR TITULO</title>
+
+    <link rel="stylesheet" href="{% static 'vazquez/style.css' %}">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <h1>Patricio Emiliano Vázquez Mares:V</h1>
+
+        <!-- ME   DE NAVEGACIoN -->
+        <nav>
+            <ul>
+                <li><a href="inicio">inicio</a></li>
+                <li><a href="registro">registro</a></li>
+                <li><a href="#">dos</a></li>
+                <li><a href="#">tres</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form method="post">
+        <label>nombre</label>
+        <input type="text" name="nombre" placeholder="escribe tu nombre..." required>
+        <label>apellido paterno:</label>
+        <input type="text" name="apellido_P" placeholder="escribe tu apellido paterno..." required>
+        <label>apellido materno</label>
+        <input type="text" name="apellido_m" placeholder="escribe tu apellido materno...">
+        <label>Edad</label>
+        <input type="number" name="edad" min="14" max="20" placeholder="escribe tu edad..." required>
+        <button type="submit"> GuardarS</button>
+    </form>
+
+    <!-- PIE DE PaGINA -->
+    <footer>
+        <p>echa por Patricio Emiliano Vázquez Mares</p>
+    </footer>
+
+</body>
+</html>
